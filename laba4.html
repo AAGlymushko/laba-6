@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <title>Game Test</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            background: #1a1a1a; 
+            color: #e0e0e0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        canvas { 
+            border: 2px solid #444; 
+            background: #2d2d2d; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .controls { 
+            display: flex; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+        .controls button { 
+            padding: 12px 24px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            background: #3a3a3a;
+            color: #e0e0e0;
+            border: 1px solid #555;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .controls button:hover {
+            background: #4a4a4a;
+            border-color: #666;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+        .controls button:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        }
+        .controls button:focus {
+            outline: 2px solid #007acc;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="root"></canvas>
+    <div class="controls" id="levelButtons"></div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
