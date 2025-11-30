@@ -8,7 +8,7 @@ export class Portal extends GameObject
     {
         super(id, coord, size);
         this.sprite = new Image();
-        this.sprite.src = "Портал.png";
+        this.sprite.src = "portal.png";
     }
     
     paint()
@@ -59,4 +59,5 @@ export class Portals
         this.#portal1.paint();
         this.#portal2.paint();
     }
+
 }
