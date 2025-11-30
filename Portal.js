@@ -17,7 +17,7 @@ export class Portal extends GameObject
         const [w, h] = this.get_size();
 
         const sprite = new Image();
-        sprite.src = "портал.png";
+        sprite.src = "portal.png";
     
         const Size = 100;
 
@@ -61,3 +61,4 @@ export class Portals
     }
 
 }
+
